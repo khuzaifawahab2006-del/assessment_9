@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Learning Management Portal</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; }
+        header { background-color: #0b2265; color: white; padding: 30px 20px; text-align: center; }
+        nav { display: flex; justify-content: center; background-color: #061647; padding: 12px; }
+        nav a { color: #f8f9fa; margin: 0 20px; text-decoration: none; font-weight: 600; }
+        nav a:hover { color: #ffc107; }
+        .main-container { max-width: 1200px; margin: 30px auto; padding: 20px; display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        h2 { color: #0b2265; border-bottom: 2px solid #ffc107; padding-bottom: 8px; margin-top: 0; }
+        .announcement { background-color: #fff3cd; border-left: 5px solid #ffc107; padding: 15px; margin-bottom: 15px; border-radius: 4px; }
+        .faculty-profile { display: flex; align-items: center; margin-bottom: 15px; }
+        .faculty-info { margin-left: 15px; }
+        .badge { display: inline-block; padding: 6px 12px; background-color: #28a745; color: white; border-radius: 20px; font-weight: bold; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>University Learning Management Portal</h1>
+        <p>Global Academic Center | Automated Release Dashboard</p>
+    </header>
+
+    <nav>
+        <a href="#courses">Courses</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#resources">Resources</a>
+        <a href="#announcements">Announcements & Exams</a>
+    </nav>
+
+    <div class="main-container">
+        <div>
+            <div class="badge">Release Version: Stable v1.0.0</div>
+            
+            <div id="courses" class="card">
+                <h2>📚 Active Course Information</h2>
+                <ul>
+                    <li><strong>CS-101:</strong> Fundamental Principles of Computer Science (4 Credits)</li>
+                    <li><strong>CS-302:</strong> Production Cloud Infrastructure & DevOps (4 Credits)</li>
+                    <li><strong>SE-204:</strong> Enterprise Software Engineering Architectures (3 Credits)</li>
+                </ul>
+            </div>
+
+            <div id="resources" class="card">
+                <h2>📖 Digital Learning Resources</h2>
+                <ul>
+                    <li><a href="#">Lecture Slide Deck: Linux Environments & Core Scripting</a></li>
+                    <li><a href="#">Lab Worksheet: Containerizing Applications with Multi-Stage Dockerfiles</a></li>
+                    <li><a href="#">Reference Manual: Kubernetes API Objects and Deployment Strategies</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div id="faculty" class="card">
+                <h2>👨‍🏫 Faculty Profiles</h2>
+                <div class="faculty-profile">
+                    <div class="faculty-info">
+                        <strong>Dr. Alan Turing</strong><br>
+                        <small>Professor, Computational Theory</small>
+                    </div>
+                </div>
+                <div class="faculty-profile">
+                    <div class="faculty-info">
+                        <strong>Prof. Grace Hopper</strong><br>
+                        <small>Senior Lecturer, Systems Automation</small>
+                    </div>
+                </div>
+            </div>
+
+            <div id="announcements" class="card">
+                <h2>🔔 Assignments & Exams</h2>
+                <div class="announcement">
+                    <strong>Assignment 4 Live:</strong> Set up a fully automated Jenkins Declarative Pipeline. Due Sunday by midnight.
+                </div>
+                <div class="announcement" style="background-color: #d1ecf1; border-left-color: #17a2b8;">
+                    <strong>Exam Schedule:</strong> Mid-semester assessments are scheduled to start from November 10th.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
 
